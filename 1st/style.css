@@ -1,0 +1,29 @@
+#mainDiv {
+  width: 100%;
+  height: 300px;
+  background-color: #74c5e0;
+  display: flex;
+  align-items: center;
+}
+
+#div2 {
+  text-align: center;
+
+  width: 58%;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.abc {
+  width: 299px;
+  height: 299px;
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
+}
+
+/* <img src="https://www.transparentpng.com/thumb/mobile/picture-mobile-blank-png-5.png" alt="picture mobile blank png @transparentpng.com"> */
