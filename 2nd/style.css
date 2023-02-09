@@ -131,7 +131,7 @@ span {
 }
 .enjoy {
   text-align: center;
-  margin-top: 130px;
+  margin-top: 100px;
   margin-bottom: 50px;
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -152,4 +152,15 @@ span {
   height: 220px;
   /* border: 1px solid black; */
   margin: 10px;
+}
+
+.how {
+  margin-bottom: 10px;
+}
+.noTravel {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(10, 4, 37, 0.8);
+  margin-bottom: 25px;
 }
