@@ -17,6 +17,7 @@ button {
   font-weight: 700;
   color: #ffffff;
   opacity: 0.9;
+  cursor: pointer;
 }
 button:hover {
   transform: scale(1.1);
@@ -26,7 +27,7 @@ button:hover {
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
 }
 span {
@@ -90,22 +91,24 @@ span {
   width: 100%;
   background-color: #faf7f3;
   display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 60px;
   /* justify-content: flex-end; */
 }
 .mainLeft {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
-  justify-content: center;
+  width: 40%;
+  margin-top: 57px;
 }
+
 .inHome {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  width: 500px;
-  font-size: 58px;
-  margin-top: 57px;
+  font-size: 52px;
+
   color: #0a0425;
-  margin-right: 200px;
 }
 .selfCare {
   font-family: "Roboto", sans-serif;
@@ -113,14 +116,16 @@ span {
   font-size: 18px;
   color: #3b3651;
   margin-top: 24px;
-  width: 510px;
+  width: 100%;
 }
-.bookNowMain {
+.mainLeft div:nth-child(3) {
   margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .becomeZoulu {
-  margin-top: 40px;
-  margin-left: 29px;
+  /* margin-left: 29px; */
   color: #30d5c8;
   background-color: #ffffff;
   border: 1px;
@@ -128,10 +133,9 @@ span {
   border-style: solid;
 }
 .pics {
-  width: 540px;
-  height: 556px;
+  width: 40%;
+  height: auto;
   margin-top: 57px;
-  margin-right: 20px;
   margin-bottom: 58px;
 }
 
@@ -148,7 +152,7 @@ span {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 48px;
-  width: 799px;
+  width: 60%;
 }
 
 .container {
@@ -159,14 +163,16 @@ span {
   width: 100%;
   justify-content: center;
 }
+
 .card {
   width: 16%;
-  height: 220px;
+  height: auto;
   /* border: 1px solid black; */
   margin: 10px;
   display: flex;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 .card:hover .title {
   transform: scale(1.2);
@@ -219,6 +225,7 @@ span {
   border-radius: 20px;
   /* height: 250px; */
   background-color: #ffffff;
+  cursor: pointer;
 }
 .coloredCard {
   background-color: #30d5c8;
@@ -230,9 +237,7 @@ span {
   width: 20%;
   margin-bottom: 30px;
 }
-.card2 div img {
-  object-fit: contain;
-}
+
 .card2 span {
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -264,10 +269,7 @@ span {
   right: -230px;
   bottom: -80px;
 }
-.thirdAbsPic img {
-  object-fit: contain;
-  border-radius: 5px;
-}
+
 .thirdAbs {
   position: absolute;
   background-color: #30d5c8;
@@ -281,14 +283,14 @@ span {
   /* position: static; */
   margin-top: 100px;
   display: flex;
-  height: 50px;
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 48px;
 }
 .thirdHead img {
-  object-fit: contain;
+  height: 64px;
 }
+
 .jack {
   font-family: "Playfair Display", serif;
   font-weight: 500;
@@ -310,12 +312,12 @@ span {
   color: rgba(10, 4, 37, 0.86);
   margin-top: 26px;
   width: 70%;
-  height: 130px;
+  height: auto;
 }
 .dots {
   margin-top: 35px;
   width: 100px;
-  height: 16px;
+  height: auto;
   margin-bottom: 50px;
 }
 
@@ -363,14 +365,14 @@ span {
   position: absolute;
   left: 0px;
   top: 0px;
-  object-fit: contain;
   width: 25px;
   height: 32px;
 }
-.trustpilot2 img {
-  object-fit: contain;
+.star {
   width: 120px;
+  object-fit: contain;
 }
+
 .trustpilot3 {
   text-align: center;
   margin-top: 5px;
@@ -387,4 +389,85 @@ span {
   padding: 35px;
   margin-right: 24px;
   width: 40%;
+  overflow-wrap: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .headerDiv {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .mainLeft {
+    width: 100%;
+  }
+  .inHome {
+    font-size: 46px;
+  }
+  .selfCare {
+    width: 100%;
+  }
+  .pics {
+    width: 100%;
+  }
+  .enjoy {
+    font-size: 24px;
+    width: 90%;
+  }
+  .card {
+    width: 45%;
+  }
+  button {
+    padding: 10px 20px;
+  }
+  .enjoy {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  .container2 {
+    flex-wrap: wrap;
+  }
+  .card2 {
+    width: 80%;
+  }
+  .grayDiv {
+    display: none;
+  }
+  .thirdMain {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 89%;
+  }
+  .thirdAbsPic {
+    display: none;
+  }
+  .thirdHead {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+  .thirdHead img {
+    height: 35px;
+  }
+  .container3 {
+    margin-top: 0;
+    padding: 40px 10px;
+  }
+  .join {
+    font-size: 18px;
+  }
+  .australias {
+    margin-top: 10px;
+    padding: 0;
+    font-size: 32px;
+  }
+  .trustpilot {
+    margin-top: 10px;
+    width: 40%;
+  }
+  .card3 div:nth-child(3) {
+    display: none;
+  }
 }
