@@ -6,6 +6,9 @@
 
 body {
   margin: 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 button {
   background-color: #30d5c8;
@@ -92,22 +95,21 @@ span {
   background-color: #faf7f3;
   display: flex;
   justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 60px;
+  padding: 60px;
   /* justify-content: flex-end; */
 }
 .mainLeft {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-top: 57px;
+  margin-left: 40px;
 }
 
 .inHome {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 52px;
-
+  width: 90%;
   color: #0a0425;
 }
 .selfCare {
@@ -121,7 +123,8 @@ span {
 .mainLeft div:nth-child(3) {
   margin-top: 40px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .becomeZoulu {
@@ -135,8 +138,6 @@ span {
 .pics {
   width: 40%;
   height: auto;
-  margin-top: 57px;
-  margin-bottom: 58px;
 }
 
 .secondMain {
@@ -324,7 +325,8 @@ span {
 .container3 {
   margin-top: 200px;
   width: 100%;
-  padding: 100px 130px;
+  padding: 100px 110px;
+  padding-bottom: 60px;
   background-color: #f8f7f7;
   display: flex;
   flex-direction: column;
@@ -370,6 +372,7 @@ span {
 }
 .star {
   width: 120px;
+  height: auto;
   object-fit: contain;
 }
 
@@ -380,16 +383,184 @@ span {
   font-weight: 400;
   font-size: 18px;
 }
-.card3 {
+.card3Container {
   margin-top: 40px;
   display: flex;
 }
-.card3 div {
+.card3 {
   background-color: #ffffff;
   padding: 35px;
   margin-right: 24px;
   width: 40%;
   overflow-wrap: normal;
+  border-radius: 8px;
+}
+.card3 div:nth-child(2) {
+  margin-top: 50px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(10, 4, 37, 0.86);
+}
+.card3 div:nth-child(3) {
+  margin-top: 50px;
+  display: flex;
+}
+.card3 div:nth-child(3) img {
+  width: 25%;
+  height: auto;
+  margin-right: 15px;
+}
+.card3 section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+.card3 section span:nth-child(1) {
+  color: #0a0425;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+.card3 section span:nth-child(2) {
+  color: rgba(10, 4, 37, 0.8);
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.card3:nth-child(2) {
+  border-bottom: 8px solid #0a0425;
+}
+.bottom {
+  margin-top: 45px;
+  margin-bottom: 0px;
+  margin-inline: auto;
+}
+
+.container4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0425;
+  padding: 40px 0px;
+  text-align: center;
+  align-items: center;
+}
+.container4 p:nth-child(1) {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #ffffff;
+}
+.container4 p:nth-child(2) {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 18px;
+}
+.container4 button {
+  margin-top: 26px;
+}
+
+.container5 {
+  width: 100%;
+  background: #faf7f3;
+  display: flex;
+  padding: 90px 120px;
+  justify-content: space-between;
+}
+.container5 .left {
+  width: 40%;
+}
+.container5 .left h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 42px;
+  color: #0a0425;
+}
+.container5 .left p {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(10, 4, 37, 0.86);
+  margin-top: 16px;
+}
+.container5 .right {
+  width: 50%;
+}
+.container5 .right details {
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  padding: 22px;
+  border: 1px solid #f9d29e;
+}
+.container5 .right details summary {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0a0425;
+}
+.container5 .right details p {
+  margin-top: 10px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(29, 38, 58, 0.9);
+}
+
+.container6 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+}
+.container6 .left {
+  width: 40%;
+  margin-top: 150px;
+}
+.container6 .left h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 42px;
+  color: #0a0425;
+}
+.container6 .left p {
+  color: rgba(10, 4, 37, 0.86);
+  margin-top: 12px;
+  width: 80%;
+}
+.container6 .left img {
+  margin-top: 28px;
+  width: 130px;
+  height: auto;
+}
+.container6 .right {
+  width: 25%;
+  height: auto;
+}
+
+.container7 {
+  padding: 65px;
+  background-color: #faf7f3;
+  text-align: center;
+  align-items: center;
+}
+.container7 h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 42px;
+  color: #0a0425;
+}
+.container7 p {
+  margin-top: 18px;
+  margin-bottom: 27px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(10, 4, 37, 0.8);
 }
 
 @media screen and (max-width: 600px) {
@@ -398,27 +569,39 @@ span {
   }
   .main {
     display: flex;
-    flex-direction: column;
-    padding: 0px 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
   }
   .mainLeft {
     width: 100%;
+    margin-top: 30px;
   }
   .inHome {
-    font-size: 46px;
+    font-size: 42px;
   }
   .selfCare {
     width: 100%;
   }
-  .pics {
+  .mainLeft div:nth-child(3) {
     width: 100%;
+    justify-content: space-evenly;
+  }
+  .pics {
+    width: 90%;
+    margin-bottom: 0px;
   }
   .enjoy {
     font-size: 24px;
     width: 90%;
   }
+  .container {
+    justify-content: space-around;
+  }
   .card {
     width: 45%;
+    height: auto;
   }
   button {
     padding: 10px 20px;
@@ -464,10 +647,58 @@ span {
     font-size: 32px;
   }
   .trustpilot {
-    margin-top: 10px;
+    margin-top: 50px;
     width: 40%;
   }
-  .card3 div:nth-child(3) {
+  .card3Container {
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card3:nth-child(1) {
+    position: absolute;
+    width: 70%;
+    left: -62%;
+  }
+  .card3:nth-child(2) {
+    width: 70%;
+  }
+  .card3:nth-child(3) {
+    position: absolute;
+    width: 70%;
+    right: -62%;
+  }
+
+  .container5 {
+    flex-direction: column;
+    padding: 80px 50px;
+  }
+  .container5 .left {
+    width: 100%;
+  }
+  .container5 .left p {
     display: none;
+  }
+  .container5 .right {
+    width: 100%;
+  }
+
+  .container6 {
+    flex-direction: column-reverse;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container6 .left {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .container6 .left p {
+    width: 100%;
+  }
+  .container6 .right {
+    width: 60%;
   }
 }
